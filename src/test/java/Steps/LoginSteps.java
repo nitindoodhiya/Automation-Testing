@@ -24,36 +24,20 @@ public class LoginSteps extends BaseUtil{
 
     @When("User Clicks on {string}")
     public void userCLicksOnString(String touch) throws InterruptedException {
-        Thread.sleep(2000);
         base.tap(touch);
     }
 
-    @And("User Picks up from")
-    public void userPicksUpDatasetFrom(DataTable dataTable) throws InterruptedException {
-        Thread.sleep(2000);
-
-        List<List<String>> list = dataTable.asLists(String.class);
-        System.out.println(list.get(0).get(0));
-        System.out.println(list.get(1).get(0));
-
-    }
-
-    @And("user enters {string} into {string}")
-    public void userEntersInto(String arg0, String arg1) {
-
-    }
-
-
     @Then("User Navigated to Homescreen")
     public void userNavigatedToHomescreen() {
+        String activity = base.androidDriver.currentActivity();
+        System.out.println(activity);
+        Thread.sleep(5000);
     }
 
     @And("User enters following fields")
     public void userEntersFollowingFields(DataTable dataTable) throws InterruptedException {
-        Thread.sleep(2000);
-
         List<List<String>> data = dataTable.asLists(String.class);
         System.out.println(data.get(0).get(0));
         base.sendkeys(data.get(0).get(0),data.get(0).get(1));
-    }
+      }
 }
