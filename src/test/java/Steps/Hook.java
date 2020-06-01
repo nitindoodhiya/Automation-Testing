@@ -23,6 +23,7 @@ public class Hook extends BaseUtil {
     @Before
     public void InitializeTest() throws MalformedURLException {
         System.out.println("opening the app");
+        //setting up the properties of device - we are using
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
         dc.setCapability("platformName", "android");
@@ -33,7 +34,7 @@ public class Hook extends BaseUtil {
         System.out.println("App Opened");
     }
 
-    @After
+   @After
     public void TearDown() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println("Closing the app");
