@@ -5,4 +5,5 @@ To run the project:
   - import in Intellij
   - add cucumber plugin
   - glue login.feature with LoginSteps.java
+  - start Appium server
   - Run the project
