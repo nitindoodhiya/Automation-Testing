@@ -13,3 +13,4 @@ Feature: This feature logs-in the user
     Then User Navigated to Homescreen
 
 #Please use your own login id password
+#otherwise it will not logged in successfully and failed the assert case of "Then" step.
