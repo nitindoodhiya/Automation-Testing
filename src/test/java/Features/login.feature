@@ -11,3 +11,5 @@ Feature: This feature logs-in the user
       | PASSWORD_INPUT_FIELD | fakepassword |
     And User Clicks on "LOGIN_BUTTON"
     Then User Navigated to Homescreen
+
+#Please use your own login id password
