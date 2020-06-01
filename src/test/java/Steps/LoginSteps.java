@@ -6,10 +6,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
+import org.testng.Assert;
 
 import java.util.List;
 
-public class LoginSteps extends BaseUtil{
+public class LoginSteps extends BaseUtil {
 
     private BaseUtil base;
 
@@ -23,21 +24,19 @@ public class LoginSteps extends BaseUtil{
     }
 
     @When("User Clicks on {string}")
-    public void userCLicksOnString(String touch) throws InterruptedException {
+    public void userCLicksOnString(String touch) {
         base.tap(touch);
     }
 
     @Then("User Navigated to Homescreen")
     public void userNavigatedToHomescreen() {
-        String activity = base.androidDriver.currentActivity();
-        System.out.println(activity);
-        Thread.sleep(5000);
+        Assert.assertTrue(base.tap("SEARCH_INPUT_FIELD_BUTTON"));    //we have a successful login or not
     }
 
     @And("User enters following fields")
-    public void userEntersFollowingFields(DataTable dataTable) throws InterruptedException {
+    public void userEntersFollowingFields(DataTable dataTable) {
         List<List<String>> data = dataTable.asLists(String.class);
-        System.out.println(data.get(0).get(0));
-        base.sendkeys(data.get(0).get(0),data.get(0).get(1));
-      }
+        base.sendkeys(data.get(0).get(0), data.get(0).get(1));          //first argument - element name
+                                                                        //second argument - value to be set
+    }
 }
