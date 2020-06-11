@@ -35,7 +35,6 @@ public class LoginSteps {
     public void userNavigatedToHomescreen() {
 
         BaseUtil.logger.info("User navigated to HomeScreen ");
-        System.out.println(base.androidDriver.currentActivity());
         Assert.assertTrue(base.tap("SEARCH_INPUT_FIELD_BUTTON"));
     }
 
@@ -56,7 +55,6 @@ public class LoginSteps {
     @And("User search for these products and add them to cart")
     public void userSearchForAnotherProduct(DataTable dataTable) throws InterruptedException {
 
-        System.out.println(base.androidDriver.currentActivity());
         List<List<String>> data = dataTable.asLists(String.class);
         for (int ind = 0; ind < data.size(); ind++) {
 
