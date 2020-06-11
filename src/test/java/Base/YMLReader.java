@@ -1,4 +1,4 @@
-package Base;
+package base;
 
 import org.yaml.snakeyaml.Yaml;
 import java.io.InputStream;
