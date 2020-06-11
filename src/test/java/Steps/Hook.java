@@ -36,7 +36,7 @@ public class Hook extends BaseUtil {
         } catch (Exception e) {
             System.out.println("Failed to create logger:" + e);
         }
-
+            // setting flag to initialise once the capabilities for scenario-outline
         if (flag) {
             logger.info("opening the app");
             //setting up the properties of device - we are using
@@ -67,7 +67,6 @@ public class Hook extends BaseUtil {
     public void TearDown() throws InterruptedException {
         Thread.sleep(5000);
         logger.info("Closing the app");
-        //androidDriver.quit();
     }
 
 
