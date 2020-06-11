@@ -1,0 +1,6 @@
+DataSet1:
+  EMAIL_INPUT_FIELD: email@gmail.com
+  PASSWORD_INPUT_FIELD: password
+DataSet2:
+  EMAIL_INPUT_FIELD: email@gmail.com
+  PASSWORD_INPUT_FIELD: password
