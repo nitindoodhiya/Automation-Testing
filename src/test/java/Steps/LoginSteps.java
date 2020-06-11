@@ -52,7 +52,7 @@ public class LoginSteps {
     }
 
 
-    @And("User search for these products and add them to cart")
+    @And("User search for these prime products and add them to cart")
     public void userSearchForAnotherProduct(DataTable dataTable) throws InterruptedException {
 
         List<List<String>> data = dataTable.asLists(String.class);
