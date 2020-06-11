@@ -13,3 +13,4 @@ To run the project:
        - mvn clean install
        - mvn test
   
+#Further watch uploaded video AutomatedAmazon.mp4
