@@ -18,14 +18,14 @@ Feature: This feature logs-in the user, Add multiple products to cart And then S
       | SEARCH_BAR | SEARCH_TAP | Noodles        | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
       | SEARCH_BAR | SEARCH_TAP | boAt headphone | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
     And User Clicks on "CART"
-#product_checkout
+#product_checkout_steps
     And User Clicks on "PROCEED_TO_BUY"
     And User Clicks on "DELIVER_TO_ADDRESS"
     And User Clicks on "CONTINUE"
-
+#payment_steps
     And User Clicks on "PAYMENT_MODE"
     And User Clicks on "ADD_YOUR_CARD"
-
+#sign_out_steps
     And User Clicks on "ACTION_BAR"
     And User Clicks on "SETTINGS"
     And User Clicks on "SIGN_OUT_BAR"
