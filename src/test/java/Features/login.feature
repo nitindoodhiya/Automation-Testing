@@ -1,6 +1,7 @@
-Feature: This feature logs-in the user
+Feature: This feature logs-in the user, Add multiple products to cart And then Sign out.
+
   @basics
-  Scenario Outline: Log-in User
+  Scenario Outline: LogIn->AddItems->SignOut
     Given App is open
     When  User Clicks on "ALREADY_HAVE_ACCOUNT"
     And User Clicks on "EMAIL_INPUT_FIELD"
@@ -11,23 +12,18 @@ Feature: This feature logs-in the user
     And User enters in "PASSWORD_INPUT_FIELD" from "<data_set>"
     And User Clicks on "LOGIN_BUTTON"
     Then User Navigated to Homescreen
-    And User search for another product
-#      | SEARCH_BAR | SEARCH_TAP | Redmi note 7   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART | ADDED_SUCCESSFULLY
-      | SEARCH_BAR | SEARCH_TAP | Apple iPhone   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART | ADDED_SUCCESSFULLY
-      | SEARCH_BAR | SEARCH_TAP | Redgear Mouse  | FIRST_SEARCHED_ELEMENT | ADD_TO_CART | ADDED_SUCCESSFULLY
-      | SEARCH_BAR | SEARCH_TAP | boAt headphone | FIRST_SEARCHED_ELEMENT | ADD_TO_CART | ADDED_SUCCESSFULLY
+    And User search for these products and add them to cart
+      | SEARCH_BAR | SEARCH_TAP | Energy Drink   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
+      | SEARCH_BAR | SEARCH_TAP | Apple iPhone   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
+      | SEARCH_BAR | SEARCH_TAP | Noodles        | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
+      | SEARCH_BAR | SEARCH_TAP | boAt headphone | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
     And User Clicks on "CART"
+#product_checkout
     And User Clicks on "PROCEED_TO_BUY"
-
     And User Clicks on "DELIVER_TO_ADDRESS"
     And User Clicks on "CONTINUE"
+
     And User Clicks on "PAYMENT_MODE"
-    And User Clicks on "CARD_NUMBER"
-    And User enters "9999888877776666" in "CARD_NUMBER"
-    And User Clicks on "EXPIRY_MONTH"
-    And User Clicks on "APRIL"
-    And User Clicks on "EXPIRY_YEAR"
-    And User Clicks on "YEAR2023"
     And User Clicks on "ADD_YOUR_CARD"
 
     And User Clicks on "ACTION_BAR"
