@@ -1,7 +1,7 @@
-package Steps;
+package steps;
 
-import Base.BaseUtil;
-import Base.Constants;
+import base.BaseUtil;
+import base.Constants;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -11,18 +11,13 @@ import org.apache.log4j.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Timestamp;
-import java.util.Date;
-import java.util.logging.FileHandler;
-import java.util.logging.SimpleFormatter;
 
 public class Hook extends BaseUtil {
 
-    private BaseUtil base;
+    private final BaseUtil base;
+    private static boolean flag = true;
 
     public Hook(BaseUtil base) throws IOException {
 
@@ -32,45 +27,47 @@ public class Hook extends BaseUtil {
     @Before
     public void InitializeTest() throws IOException {
         try {
-            if(base.newlog)
-            {
+            if (newlog) {
                 System.out.println("Creating New Log");
                 PropertyConfigurator.configure(Constants.log4jPropertyFile);
-                base.logger.info("Logger Created");
-                base.newlog = false;
+                logger.info("Logger Created");
+                newlog = false;
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println("Failed to create logger:" + e);
         }
 
-        base.logger.info("opening the app");
-        //setting up the properties of device - we are using
-        try {
+        if (flag) {
+            logger.info("opening the app");
+            //setting up the properties of device - we are using
+            try {
 
-            DesiredCapabilities dc = new DesiredCapabilities();
-            dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
-            dc.setCapability("platformName", "android");
-            dc.setCapability("appPackage", "in.amazon.mShop.android.shopping");
-            dc.setCapability("appActivity", "com.amazon.micron.StartupActivity");
-            base.androidDriver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"), dc);
-            base.wait = new WebDriverWait(base.androidDriver, 20);
+                DesiredCapabilities dc = new DesiredCapabilities();
+                dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+                dc.setCapability("platformName", "android");
+                dc.setCapability("appPackage", "in.amazon.mShop.android.shopping");
+                dc.setCapability("appActivity", "com.amazon.mShop.home.HomeActivity");
+                androidDriver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"), dc);
+                wait = new WebDriverWait(androidDriver, 25);
+            } catch (Exception e) {
+                logger.error(e);
+                logger.info("Failed to Open the App");
+                return;
+            }
+            logger.info("App Opened");
+            flag = false;
         }
-        catch (Exception e)
-        {
-            base.logger.error(e);
-            base.logger.info("Failed to Open the App");
-            return;
+        else {
+            logger.info("App Already Opened");
         }
-        base.logger.info("App Opened");
+
     }
 
     @After
     public void TearDown() throws InterruptedException {
         Thread.sleep(5000);
-        base.logger.info("Closing the app");
-        base.androidDriver.quit();
+        logger.info("Closing the app");
+        //androidDriver.quit();
     }
 
 
