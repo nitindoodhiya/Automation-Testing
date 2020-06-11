@@ -24,13 +24,3 @@ CONTINUE:               //*[@text='Continue']
 PAYMENT_MODE:           //*[@text='Add Debit/Credit/ATM Card']
 ADD_YOUR_CARD:          //*[@text='Add your card']
 PRIME_PRODUCT:          //*[@resource-id='sx-rib-redesign-prime-logo-link']
-
-
-
-
-
-
-
-
-
-
