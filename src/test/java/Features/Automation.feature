@@ -12,7 +12,7 @@ Feature: This feature logs-in the user, Add multiple products to cart And then S
     And User enters in "PASSWORD_INPUT_FIELD" from "<data_set>"
     And User Clicks on "LOGIN_BUTTON"
     Then User Navigated to Homescreen
-    And User search for these products and add them to cart
+    And User search for these prime products and add them to cart
       | SEARCH_BAR | SEARCH_TAP | Energy Drink   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
       | SEARCH_BAR | SEARCH_TAP | Apple iPhone   | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
       | SEARCH_BAR | SEARCH_TAP | Noodles        | FIRST_SEARCHED_ELEMENT | ADD_TO_CART |
