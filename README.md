@@ -28,7 +28,16 @@ Follow the following steps:
 		Follow the guide [Guide ](https://www.javatpoint.com/how-to-install-maven)
 # Running the Project
 	1. Open repository in Intellij
-	2. 
+	2. Changing paths:
+		-log4jPropertyFile:
+			Edit Constants class as => log4jPropertyFile = "C:\\Users\\nitin\\IdeaProjects\\Automation-Testing\\src\\test\\config\\log4j.properties";
+    		-logs location:
+			Edit log4j.properties file => log4j.appender.file.File=C:\\Users\\nitin\\Desktop\\logs_${current.date.time}.log
+	3. Start the Appium Server:
+	
+	4. Start Android Emulator:
+	
+	5  
 	
 	Open this repository in Intellij as maven project <br />
 	-From plugin store install cucumber plugin
