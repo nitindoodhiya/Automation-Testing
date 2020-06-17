@@ -14,7 +14,7 @@ After installation will support you to create and use predefined actions for an 
 # Installation
 
 Follow the following steps:<br/>
-	1. IDE <br/>
+	1. IDE<br/>
 		-Install preferred IDE- Intellij IDEA <br />
 	2. Repository<br/>
 		-Download this repository : [Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)<br />
