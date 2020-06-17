@@ -85,12 +85,12 @@ After installation will support you to create and use predefined actions for an 
 				Hook.java:
 					- Initaializes/Injects the properties of BaseUtil objects
 				LoginSteps.java:
-					- Step defination of the actions/steps declared in feature file
+					- Step definition of the actions/steps declared in feature file
 					- Implements the the actions using the BaseUtil functions
 			iv. TestRunner:
 				LoginRunner:
 					- @CucumberOptions(features = "src/test/java/Features", glue = "Steps")
-					- Glue the StepDefination java file with the feature file
+					- Glue the StepDefinition java file with the feature file
 			
 					
 				
