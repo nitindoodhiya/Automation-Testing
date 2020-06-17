@@ -33,11 +33,15 @@ Follow the following steps:
 			Edit Constants class as => log4jPropertyFile = "C:\\Users\\nitin\\IdeaProjects\\Automation-Testing\\src\\test\\config\\log4j.properties";
 		-logs location:
 			Edit log4j.properties file => log4j.appender.file.File=C:\\Users\\nitin\\Desktop\\logs_${current.date.time}.log
-	3. Start the Appium Server:
-	
-	4. Start Android Emulator:
-	
-	5  
+	3. Appium Server:
+		-Open Appium Server
+		-Start Appium Server
+	4. Android Emulator:
+		-cd C:\Users\nitin\AppData\Local\Android\Sdk\emulator
+		-adb start-server
+		-emulator -avd Pixel_3a_API_28
+		
+	5.   
 	
 	Open this repository in Intellij as maven project <br />
 	-From plugin store install cucumber plugin
