@@ -41,21 +41,13 @@ Follow the following steps:
 		-adb start-server
 		-emulator -avd Pixel_3a_API_28
 		
-	5.   
+	5. By Intellij 
+		-Open TestRunner package and run LoginRunner through Intellij
+	6. Bt Commandline
+		-mvn build
+		-mvn test
+		
 	
-	Open this repository in Intellij as maven project <br />
-	-From plugin store install cucumber plugin
-	-Download the Appium server from: [Appium ](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1)
-	-Start the appium server
-	![alt text](startserver.jpg)
-	-To get Android emulator follow:
-		-Open Android Studio, 
-		-Create a Virtual Device 
-		-Example Pixel_3a_API_28
-	-cd C:\Users\nitin\AppData\Local\Android\Sdk\emulator
-	-adb start-server
-	-emulator -avd Pixel_3a_API_28
-	Maven 
 		
 
 	
