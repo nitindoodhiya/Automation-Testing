@@ -48,8 +48,8 @@ After installation will support you to create and use predefined actions for an 
 		-mvn build
 		-mvn test
 		
-#Understanding the Structure
-	##Softwares Used 
+# Understanding the Structure
+	## Softwares Used 
 		1. Appium:
 			- It provides Interface to connect with android device and control using libraries.
 			- Its Rich in development and documentation
@@ -67,7 +67,7 @@ After installation will support you to create and use predefined actions for an 
 			- Logger for our system
 			- Define errors on basis of severity
 			- Format the error results in favourable way
-	##Implementing:
+	## Implementing:
 		1. Packages:
 			- 
 			
