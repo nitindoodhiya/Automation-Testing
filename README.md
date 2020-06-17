@@ -47,7 +47,28 @@ Follow the following steps:<br/>
 		-mvn build
 		-mvn test
 		
-	
-		
+#Understanding the Structure
+	##Softwares Used 
+		1. Appium:
+			- It provides Interface to connect with android device and control using libraries.
+			- Its Rich in development and documentation
+		2. Cucumber:
+			- Cucumber understands a special high level language close to English called Gherkin
+			- Language allows to understand for Business, Developers and Testers easily
+		3. Maven:
+			- Lets you to resolve dependencies in one go
+			- Maintain Dependency easily
+		4. java:
+			- Rich Community
+			- Multiple resources available
+			- Easy to resolve errors
+		5. log4j:
+			- Logger for our system
+			- Define errors on basis of severity
+			- Format the error results in favourable way
+	##Implementing:
+		1. Packages:
+			- 
+			
 
 	
