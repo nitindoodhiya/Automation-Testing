@@ -31,7 +31,7 @@ Follow the following steps:
 	2. Changing paths:
 		-log4jPropertyFile:
 			Edit Constants class as => log4jPropertyFile = "C:\\Users\\nitin\\IdeaProjects\\Automation-Testing\\src\\test\\config\\log4j.properties";
-    		-logs location:
+		-logs location:
 			Edit log4j.properties file => log4j.appender.file.File=C:\\Users\\nitin\\Desktop\\logs_${current.date.time}.log
 	3. Start the Appium Server:
 	
