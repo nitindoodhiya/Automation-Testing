@@ -14,8 +14,10 @@ After installation will support you to create and use predefined actions for an 
 # Installation
 
 Follow the following steps:
-	-Install preferred IDE eclipse/Intellij IDEA
-	-Download this repository 
-		-[Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)
-	-Open this repository in Intellij as maven project
-	-From from plugin marketplace install 
+	-Install preferred IDE eclipse/Intellij IDEA <br />
+	-Download this repository <br />
+	                -[Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)<br />
+	-Open this repository in Intellij as maven project <br />
+        -from plugin marketplace install <br />
+        -
+        
