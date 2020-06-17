@@ -15,7 +15,7 @@ After installation will support you to create and use predefined actions for an 
 
 Follow the following steps:
 	1. IDE 
-		Install preferred IDE eclipse/Intellij IDEA <br />
+		Install preferred IDE- Intellij IDEA <br />
 	2. Repository
 		Download this repository : [Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)<br />
 	3. Cucumber Plugin
