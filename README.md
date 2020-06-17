@@ -71,14 +71,29 @@ After installation will support you to create and use predefined actions for an 
 		1. Packages:
 			i. Features:
 				Contains features of software to be tested
-				Each feature will have actions to conduct
+				Each feature will have actions/steps to conduct
 				Feature is written in gherkin language
 			ii. Base:
 				BaseUtil.java: 
-					- Basic functions to control an Android devices
+					- Basic functions to control an Android devices example, Scrolling, tapping, finding objects, etc.
 					- Data members for connecting to Appium server
 				Constants.java:
-					- Static Data members 
+					- Static Final Strings to keep strings/names/locations separate 
+				YMLReader.java:
+					- To return xpath of required elements after reading YML files
+			iii. Steps:
+				Hook.java:
+					- Initaializes/Injects the properties of BaseUtil objects
+				LoginSteps.java:
+					- Step defination of the actions/steps declared in feature file
+					- Implements the the actions using the BaseUtil functions
+			iv. TestRunner:
+				LoginRunner:
+					- @CucumberOptions(features = "src/test/java/Features", glue = "Steps")
+					- Glue the StepDefination java file with the feature file
+			
+					
+				
 			
 
 	
