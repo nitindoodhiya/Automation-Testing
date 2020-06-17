@@ -14,10 +14,35 @@ After installation will support you to create and use predefined actions for an 
 # Installation
 
 Follow the following steps:
-	-Install preferred IDE eclipse/Intellij IDEA <br />
-	-Download this repository <br />
-	                -[Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)<br />
-	-Open this repository in Intellij as maven project <br />
-        -from plugin marketplace install <br />
-        -
-        
+	1. IDE 
+		Install preferred IDE eclipse/Intellij IDEA <br />
+	2. Repository
+		Download this repository : [Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)<br />
+	3. Cucumber Plugin
+		Install from plugin marketplace
+	4. Appium Server
+		Download from [Appium ](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1)
+	5. Android Emulator
+		Use Virtual Device from Android Studio , Example Pixel_3a_API_28
+	6. Maven 
+		Follow the guide [Guide ](https://www.javatpoint.com/how-to-install-maven)
+# Running the Project
+	1. Open repository in Intellij
+	2. 
+	
+	Open this repository in Intellij as maven project <br />
+	-From plugin store install cucumber plugin
+	-Download the Appium server from: [Appium ](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1)
+	-Start the appium server
+	![alt text](startserver.jpg)
+	-To get Android emulator follow:
+		-Open Android Studio, 
+		-Create a Virtual Device 
+		-Example Pixel_3a_API_28
+	-cd C:\Users\nitin\AppData\Local\Android\Sdk\emulator
+	-adb start-server
+	-emulator -avd Pixel_3a_API_28
+	Maven 
+		
+
+	
