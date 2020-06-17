@@ -69,7 +69,16 @@ After installation will support you to create and use predefined actions for an 
 			- Format the error results in favourable way
 	## Implementing:
 		1. Packages:
-			- 
+			i. Features:
+				Contains features of software to be tested
+				Each feature will have actions to conduct
+				Feature is written in gherkin language
+			ii. Base:
+				BaseUtil.java: 
+					- Basic functions to control an Android devices
+					- Data members for connecting to Appium server
+				Constants.java:
+					- Static Data members 
 			
 
 	
