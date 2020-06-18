@@ -17,11 +17,12 @@ After installation will support you to create and use predefined actions for an 
 			-Install preferred IDE- Intellij IDEA 
 		2. Repository:
 			-Download this repository : 
-			[a Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)
+			[Automation-Testing Android](https://github.com/nitindoodhiya/Automation-Testing/archive/master.zip)
 		3. Cucumber Plugin
 			-Install from plugin marketplace
 		4. Appium Server
-			-Download from [a Appium ](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1)
+			-Download from 
+			[Appium ](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1)
 		5. Android Emulator
 			-Use Virtual Device from Android Studio , Example Pixel_3a_API_28
 		6. Maven 
@@ -94,7 +95,7 @@ After installation will support you to create and use predefined actions for an 
 			
 					
 # Class Diagram:
-	![alt text](https://github.com/nitindoodhiya/Automation-Testing/blob/master/diagram_1.png?raw=true)				
+	(https://github.com/nitindoodhiya/Automation-Testing/blob/master/diagram_1.png)				
 			
 
 	
